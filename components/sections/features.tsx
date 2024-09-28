@@ -1,26 +1,29 @@
 import React from 'react'
-import { FaCut, FaRobot, FaVideo } from 'react-icons/fa';
-import { GiBrain, GiFilmStrip } from 'react-icons/gi';
-import { MdVideoLibrary } from 'react-icons/md';
+import { FaCut, FaRobot } from 'react-icons/fa';
 import { PiRocketLaunchBold } from 'react-icons/pi';
 import { SiGithubactions } from 'react-icons/si';
 import FeatureCard from '../featureCard';
 import Feature from '../feature';
+import { FaMoneyCheckDollar } from "react-icons/fa6";
+import { GiReceiveMoney } from "react-icons/gi";
+import { FcMoneyTransfer } from "react-icons/fc";
+import { FaSailboat } from "react-icons/fa6";
+
 
 const featureCards = [
   {
-    icon: GiBrain,
-    slogan: "Automated Editing",
-    heading: "Seamless and Smart",
-    text: "Our AI-powered editor automatically cuts, trims, and enhances your footage with precision, enabling you to focus on creativity without manual editing hassles.",
+    icon: GiReceiveMoney,
+    slogan: " Automated Subscription Management",
+    heading: "Handle Recurring Payments",
+    text: "Say goodbye to manual payment tracking. With PlanVault, automate your subscription cycles, billing, and customer notifications. Our system adapts to flexible pricing models, ensuring you never miss a payment and keeping your customers satisfied with seamless, uninterrupted service.",
     buttonIcon: SiGithubactions,
     buttonText: "See in Action"
   },
   {
-    icon: MdVideoLibrary,
-    slogan: "Media Library",
-    heading: "Unlimited Resources",
-    text: "Explore our extensive media library, featuring diverse stock footage, high-quality music tracks, and professional effects to enhance your videos effortlessly.",
+    icon: FcMoneyTransfer,
+    slogan: "Real-Time Analytics & Insights",
+    heading: "Make Data-Driven Decisions",
+    text: "Stay ahead of your business finances with real-time analytics and detailed reports. PlanVault gives you a comprehensive overview of your revenue streams, payment statuses, and subscription performance, empowering you to make informed decisions and grow your business faster.",
     buttonIcon: PiRocketLaunchBold,
     buttonText: "Explore Now"
   }
@@ -28,14 +31,19 @@ const featureCards = [
 
 const features = [
   { icon: FaRobot, name: "AI Smart Tools" },
-  { icon: FaCut, name: "Precise Trimming" },
-  { icon: FaVideo, name: "High-Quality Exports" },
-  { icon: GiFilmStrip, name: "Advanced Filters" }
+  { icon: FaCut, name: "Enhanced Security & Compliance" },
+  { icon: FaSailboat, name: "Customizable Pricing Plans" },
+  { icon: FaMoneyCheckDollar, name: "Seamless Stripe Integration" }
 ];
 
 const Features = () => {
   return (
     <div className='p-4 pt-28' id='features'>
+            <h2 className='h2 text-center w-80 mb-6 md:w-96 mx-auto relative z-10'>
+      <span className="bg-gradient-to-r text-4xl font-extrabold from-teal-400 to-pink-400 bg-clip-text text-transparent">
+          Features
+      </span>
+      </h2>
       <div className='flex flex-col mx-4 lg:mx-16 border-2 border-blue-900 bg-blue-950 rounded-3xl shadow-inner shadow-blue-900'>
         <div className='grid md:grid-cols-2 pt-8 md:pt-0'>
           {featureCards.map((card, index) => (

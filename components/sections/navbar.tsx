@@ -13,7 +13,7 @@ interface NavbarLinkProps{
 const NavbarLink = ({href, currentSection, children}:NavbarLinkProps) => {
   const isActive = currentSection === href.substring(1)
   return (
-    <Link href={href} className={`hidden md:block font-semibold ${isActive ? 'text-lime-400' : ''}`}>
+    <Link href={href} className={`hidden md:block px-6 py-1 bg-gradient-to-r from-green-400 to-blue-500 text-white rounded-full transition-transform transform-gpu hover:-translate-y-1 hover:shadow-lg font-semibold ${isActive ? 'text-lime-400' : ''}`}>
       {children}
       {isActive && <div className='abolute bottom-[-3px] w-full h-[3px] bg-lime-400 rounded-full'/>}
     </Link>

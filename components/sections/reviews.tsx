@@ -6,37 +6,37 @@ const reviews = [
     name: "John Doe",
     imgSrc: "/reviews/rev1.jpg",
     company: "Tech Innovators Inc.",
-    review: "This AI video editor is a game-changer! It made editing our promotional videos so much easier and faster."
+    review: "PlanVault has transformed the way I manage my client subscriptions. The automated invoicing feature saves me hours each month, allowing me to focus more on my creative work!"
   },
   {
     name: "Jane Smith",
     imgSrc: "/reviews/rev2.jpg",
     company: "Creative Studios",
-    review: "I love how user-friendly the AI video editor is. It’s perfect for beginners and professionals alike."
+    review: "As a small business, we struggled with payment processing until we found PlanVault. The user-friendly interface and seamless Stripe integration have streamlined our operations significantly."
   },
   {
     name: "Emily Johnson",
     imgSrc: "/reviews/rev3.jpg",
     company: "Marketing Gurus",
-    review: "The automated editing features saved us a ton of time. The final product was polished and professional."
+    review: "I love how customizable PlanVault is! I can create tailored pricing plans for my customers, making it easy to cater to different needs while maximizing revenue."
   },
   {
     name: "Michael Brown",
     imgSrc: "/reviews/rev4.jpg",
     company: "Content Creators LLC",
-    review: "The AI suggestions were spot on and really helped improve the quality of our videos. Highly recommend!"
+    review: "The real-time analytics provided by PlanVault give me invaluable insights into my revenue and subscriptions. I can now make data-driven decisions that propel my business forward."
   },
   {
     name: "David Wilson",
     imgSrc: "/reviews/rev5.jpg",
     company: "Digital Media Experts",
-    review: "This AI video editor has become an essential tool for our team. It’s efficient and easy to use."
+    review: "The customer support team at PlanVault is fantastic! They were quick to assist me with integrating the platform into my existing system, and I couldn't be happier with the results."
   },
   {
     name: "Sarah Davis",
     imgSrc: "/reviews/rev6.jpg",
     company: "Video Production House",
-    review: "The AI editor exceeded our expectations. The quality of our video content has significantly improved."
+    review: "PlanVault’s enterprise-level features have been a game-changer for us. The advanced security measures and dedicated account management ensure we’re compliant and efficient."
   }
 ];
 
@@ -45,8 +45,9 @@ const Reviews = () => {
     <div className='p-16 flex flex-col lg:flex-row lg:justify-between relative'>
       <div className='absolute left-1/4 w-3/4 inset-0 gradient-01 z-0' />
       <div className='mb-16 w-72 z-10'>
-        <p className='text-slogan mb-6'>wall of love</p>
-        <h2 className='h2'>Words from our fans</h2>
+      <span className="bg-gradient-to-r text-4xl font-extrabold from-teal-400 to-pink-400 bg-clip-text text-transparent">
+          Testmonials
+      </span>
       </div>
       <div className='grid md:grid-cols-2 gap-16 z-10 place-items-center'>
         {reviews.map((review, index) => (
