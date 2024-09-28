@@ -16,7 +16,7 @@ const ReviewCard = ({name, imgSrc, company, review}:ReviewCardPorps) => {
         <Icon imgSrc={imgSrc} />
         <div>
             <p className='mb-1 text-sm text-cyan-500 font-semibold'>{name}</p>
-            <p className='p-xs'>{company}</p>
+            <p className='p-xs text-gray-300'>{company}</p>
         </div>
       </div>
     </div>

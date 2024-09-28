@@ -3,44 +3,44 @@ import FaqCard from '../faqCard';
 
 const faqs = [
   {
-    question: "What is an AI video editor?",
-    answer: "An AI video editor uses artificial intelligence to automate and enhance video editing processes, making it easier and faster to create professional-quality videos."
+    question: "What is PlanVault, and how does it work?",
+    answer: "PlanVault is a subscription-based payment platform that automates billing, invoicing, and subscription management for businesses of all sizes. It integrates seamlessly with Stripe for secure transactions and real-time financial insights."
   },
   {
-    question: "How does AI improve video editing?",
-    answer: "AI can automate repetitive tasks, enhance video quality, provide smart editing suggestions, and use machine learning to understand and apply optimal edits based on the content."
+    question: "How do I get started with PlanVault?",
+    answer: "Getting started is easy! Simply sign up for a free trial, choose a plan that fits your needs, and start managing your subscriptions and payments from the dashboard."
   },
   {
-    question: "Can AI video editors edit videos automatically?",
-    answer: "Yes, AI video editors can automatically trim, cut, and arrange video clips, apply transitions, and even add music based on the content and style preferences set by the user."
+    question: "What payment methods does PlanVault support?",
+    answer: "PlanVault supports multiple payment methods through its integration with Stripe, including credit/debit cards, bank transfers, and digital wallets like Apple Pay and Google Pay."
   },
   {
-    question: "Is AI video editing suitable for beginners?",
-    answer: "Absolutely! AI video editors are designed to be user-friendly, making it easier for beginners to create high-quality videos without needing extensive editing skills."
+    question: "Can I customize my pricing plans for my customers?",
+    answer: "Yes, PlanVault allows you to create and manage flexible pricing models, including tiered and custom pricing plans, for your customers."
   },
   {
-    question: "Can I customize the edits made by the AI?",
-    answer: "Yes, most AI video editors allow users to manually adjust and customize the edits made by the AI to match their specific preferences and vision."
+    question: "Is my financial data secure on PlanVault?",
+    answer: "Absolutely! We use industry-leading encryption and comply with all relevant security and privacy standards, including PCI-DSS, to ensure your data and transactions are secure."
   },
   {
-    question: "What types of videos can I edit with an AI video editor?",
-    answer: "AI video editors can be used to edit a wide range of videos, including vlogs, tutorials, promotional videos, social media content, and more."
+    question: "What happens when my free trial ends?",
+    answer: "At the end of your free trial, you can choose to subscribe to one of our paid plans (Individual, Premium, or Enterprise). If you decide not to upgrade, your account will be downgraded with limited access."
   },
   {
-    question: "How fast can an AI video editor process a video?",
-    answer: "The speed of processing depends on the length and complexity of the video, but AI video editors generally process videos much faster than traditional methods."
+    question: "Can I upgrade or downgrade my plan at any time?",
+    answer: "Yes, you can easily switch between plans at any time from your account settings. Changes in billing will be adjusted automatically."
   },
   {
-    question: "Do AI video editors support multiple video formats?",
-    answer: "Yes, most AI video editors support a wide range of video formats, allowing you to import and export videos in the format that best suits your needs."
+    question: "Does PlanVault support multi-currency payments?",
+    answer: "Yes, PlanVault supports multi-currency payments through Stripe, allowing you to charge customers in their preferred currency."
   },
   {
-    question: "Are there any privacy concerns with AI video editors?",
-    answer: "It's important to use AI video editors from reputable providers that ensure your data and content are secure and not misused. Always check the privacy policy of the service you are using."
+    question: "What level of customer support does PlanVault provide?",
+    answer: "We offer tiered customer support based on your plan, including email support for the Individual plan, priority chat support for the Premium plan, and 24/7 dedicated support for the Enterprise plan."
   },
   {
-    question: "Do AI video editors offer templates and presets?",
-    answer: "Yes, many AI video editors come with a variety of templates and presets that can help you quickly create professional-looking videos with minimal effort."
+    question: "How do I integrate PlanVault into my existing system?",
+    answer: "PlanVault offers easy-to-use APIs and integrations to connect with your current tech stack. Our documentation guides you through the setup, and our support team is always available to assist."
   }
 ];
 
@@ -51,8 +51,9 @@ const Faq = () => {
   }
   return (
     <div className='px-4 lg:px-16 pt-28' id='faq'>
-      <h2 className='h2 max-w-96 md:pl-8'>You`ve got questions, we`ve got answers.</h2>
-      <p className='p mt-4 md:pl-8'>Find your answers below</p>
+   <span className="bg-gradient-to-r text-4xl font-extrabold from-teal-400 to-pink-400 bg-clip-text text-transparent">
+          Frequently asked Questions
+      </span>
       <div className='grid md:grid-cols-2 mt-16 gap-y-4 gap-x-16'>
         {faqs.map((faq, index) => (
           <FaqCard key={index} question={faq.question} answer={faq.answer} number={formatNumber(index  + 1)} />
