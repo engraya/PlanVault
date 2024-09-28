@@ -28,7 +28,7 @@ const Footer = () => {
           <Link href='#download' className='text-slate-400 text-xl font-semibold'>Download</Link>
         </div>
         <div className='w-64 lg:w-80 flex flex-col-reverse lg:flex-row gap-4 justify-between p-xs mt-12 md:mt-16 mx-auto items-center'>
-          <p>&copy; Fibipal Inc.</p>
+          <p>&copy; PlanVault</p>
           <div className='text-slate-400'>
             <Link href='#'>Privacy policy |</Link>
             <Link href='#'> Terms of service</Link>
